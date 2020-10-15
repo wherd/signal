@@ -1,0 +1,35 @@
+{
+    "name": "wherd/signal",
+    "description": "Yet Another Template Engine",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wherd",
+            "email": "ola@wherd.dev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wherd\\Signal\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wherd\\Signal\\Spec\\": "spec/"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.49",
+        "kahlan/kahlan": "^4.7",
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "require": {
+        "php": ">=7.0"
+    },
+    "scripts": {
+        "fmt": "php-cs-fixer fix src --config .php_cs.dist",
+        "analyse": "phpstan analyse --level 8 src",
+        "test": "kahlan"
+    }
+}

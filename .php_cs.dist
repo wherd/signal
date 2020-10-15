@@ -1,0 +1,16 @@
+<?php
+
+ini_set('memory_limit', '256M');
+
+return PhpCsFixer\Config::create()
+    ->setRiskyAllowed(true)
+    ->setRules([
+        '@PSR2' => true,
+        'combine_consecutive_issets' => true,
+        'concat_space' => [
+            'spacing' => 'one',
+        ],
+        'psr4' => true,
+        'yoda_style' => true,
+    ])
+    ->setCacheFile(__DIR__.'/.php_cs.cache');
