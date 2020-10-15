@@ -226,13 +226,23 @@ class Context
     }
 
     /**
-     * Get current section.
+     * Get block exists.
      * @param string $name
      * @return bool
      */
     public function blockExists($name)
     {
         return isset($this->heap[trim($name)]);
+    }
+
+    /**
+     * Get if block is not defined.
+     * @param string $name
+     * @return bool
+     */
+    public function blockMissing($name)
+    {
+        return ! isset($this->heap[trim($name)]);
     }
 
     /**

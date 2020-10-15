@@ -46,6 +46,16 @@ trait HeapDirectives
     }
 
     /**
+     * Compile block is missing.
+     * @param string $expression
+     * @return string
+     */
+    protected function compileBlockMissing($expression)
+    {
+        return "<?php \$__context->blockMissing($expression) ?>";
+    }
+
+    /**
      * Compile end block definition.
      * @return string
      */
