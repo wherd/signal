@@ -2,7 +2,7 @@
     "name": "wherd/signal",
     "description": "Yet Another Template Engine",
     "type": "library",
-    "license": "MIT",
+    "license": "AFL",
     "authors": [
         {
             "name": "wherd",
