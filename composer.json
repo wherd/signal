@@ -14,7 +14,7 @@
             "type": "other",
             "url": "https://www.buymeacoffee.com/wherd"
         }
-    }
+    ],
     "autoload": {
         "psr-4": {
             "Wherd\\Signal\\": "src/"
